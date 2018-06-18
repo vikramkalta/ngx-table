@@ -1,0 +1,21 @@
+table {
+  height: 100%;
+  width: 100%;
+  border-spacing: 0px !important;
+  color: #908b8b;
+}
+
+.ngx-table-wrapper {
+  padding: 2%;
+  background: white;
+}
+
+// optional via input
+th, td {
+  text-align: left;
+  border-bottom: 1px solid #eae1e1;
+}
+// optional via input
+tr:nth-child(1) {
+  background: #eff0f6;
+}

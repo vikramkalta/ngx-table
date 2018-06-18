@@ -1,0 +1,23 @@
+<div fxFlexFill class="ngx-table-wrapper">
+
+  <table>
+
+    <tr>
+
+      <th *ngFor="let columns of displayedColumns">
+        {{ columns }}
+      </th>
+
+    </tr>
+
+    <tr *ngFor="let rowData of dataSource">
+
+      <td *ngFor="let columns of displayedColumns">
+        {{ rowData[columns] }}
+      </td>
+
+    </tr>
+
+  </table>
+
+</div>

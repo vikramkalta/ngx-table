@@ -1,0 +1,41 @@
+{
+  "generator-ngx-library": {
+    "version": "6.1.0",
+    "authorName": "vikram",
+    "authorEmail": "vikram@ideaplunge.in",
+    "githubUsername": "vikramkalta",
+    "githubRepoName": "ngx-table",
+    "projectName": "ngx-awesome-table",
+    "projectVersion": "0.0.1",
+    "projectDescription": "Angular library built with ❤ using ngx-library yeoman generator.",
+    "projectKeywords": [
+      "ng",
+      "angular",
+      "library"
+    ],
+    "ngVersion": "2.0.0",
+    "ngModules": [
+      "core",
+      "common"
+    ],
+    "otherDependencies": [
+      "angular material",
+      "flex"
+    ],
+    "additionalPackageFiles": [],
+    "dependenciesRange": "^",
+    "ngPrefix": "app-table",
+    "testingFramework": "karma",
+    "useGreenkeeper": false,
+    "useCompodoc": true,
+    "enforceNgGitCommitMsg": true,
+    "exclusions": [
+      "src/tsconfig.lib.es5.json",
+      "demo/src/jestGlobalMocks.ts",
+      "demo/src/setupJest.ts",
+      "config/jestGlobalMocks.ts",
+      "config/setupJest.ts"
+    ],
+    "deleteExclusions": []
+  }
+}
