@@ -4,16 +4,16 @@
 
     <tr>
 
-      <th *ngFor="let columns of displayedColumns">
-        {{ columns }}
+      <th *ngFor="let column of columns">
+        {{ column }}
       </th>
 
     </tr>
 
-    <tr *ngFor="let rowData of dataSource">
+    <tr *ngFor="let data of dataSource">
 
-      <td *ngFor="let columns of displayedColumns">
-        {{ rowData[columns] }}
+      <td *ngFor="let column of columns">
+        {{ data[column] }}
       </td>
 
     </tr>

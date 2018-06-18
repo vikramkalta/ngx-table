@@ -18,13 +18,14 @@ export class LibComponent implements OnInit, OnChanges {
   @Input() renderer: boolean;
   // data for the table
   @Input() tableData: any;
+  @Input() dataSource: any;
   // number of pages
   @Input() totalPages: Array<number>;
 
   // store actual pages in the following property
   actualPages: number;
   // adding data source to the table
-  dataSource: any[];
+  // dataSource: any[];
   // columns
   displayedColumns: Array<string>;
 
@@ -39,12 +40,12 @@ export class LibComponent implements OnInit, OnChanges {
       this.actualPages = this.tableData.TotalPages;
 
       // set the columns name
-      this.displayedColumns = this.columns;
+      // this.displayedColumns = this.columns;
 
       // this.onSelectPage = this.totalPages[0];
 
       // setting the data source property
-      this.dataSource = this.tableData.Data;
+      // this.dataSource = this.tableData.Data;
     }
   }
 }
