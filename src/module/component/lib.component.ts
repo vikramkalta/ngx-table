@@ -34,8 +34,8 @@ export class LibComponent implements OnInit, OnChanges {
 
   ngOnChanges(changes: SimpleChanges) {
     // changes in the table data
-    if (this.dataSource && changes.dataSource) {
-      console.log('changes.data source', changes.dataSource);
+    if (this.dataSource) {
+      console.log('changes.data source', this.dataSource);
 
       this.dataSource = this.dataSource;
 
