@@ -34,18 +34,18 @@ export class LibComponent implements OnInit, OnChanges {
 
   ngOnChanges(changes: SimpleChanges) {
     // changes in the table data
-    if (this.tableData.Data) {
+    // if (this.tableData.Data) {
 
-      // actual pages
-      this.actualPages = this.tableData.TotalPages;
+    //   // actual pages
+    //   this.actualPages = this.tableData.TotalPages;
 
-      // set the columns name
-      // this.displayedColumns = this.columns;
+    //   // set the columns name
+    //   // this.displayedColumns = this.columns;
 
-      // this.onSelectPage = this.totalPages[0];
+    //   // this.onSelectPage = this.totalPages[0];
 
-      // setting the data source property
-      // this.dataSource = this.tableData.Data;
-    }
+    //   // setting the data source property
+    //   // this.dataSource = this.tableData.Data;
+    // }
   }
 }
