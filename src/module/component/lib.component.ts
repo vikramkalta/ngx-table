@@ -17,35 +17,38 @@ export class LibComponent implements OnInit, OnChanges {
   // set flag for handling methods server or client side
   @Input() renderer: boolean;
   // data for the table
-  @Input() tableData: any;
+  // @Input() tableData: any;
   @Input() dataSource: any;
   // number of pages
   @Input() totalPages: Array<number>;
 
   // store actual pages in the following property
-  actualPages: number;
+  // actualPages: number;
   // adding data source to the table
   // dataSource: any[];
   // columns
-  displayedColumns: Array<string>;
+  // displayedColumns: Array<string>;
 
   ngOnInit() {
   }
 
   ngOnChanges(changes: SimpleChanges) {
     // changes in the table data
-    // if (this.tableData.Data) {
+    if (this.dataSource && changes.dataSource) {
+      console.log('changes.data source', changes.dataSource);
 
-    //   // actual pages
-    //   this.actualPages = this.tableData.TotalPages;
+      this.dataSource = this.dataSource;
 
-    //   // set the columns name
-    //   // this.displayedColumns = this.columns;
+      // actual pages
+      // this.actualPages = this.tableData.TotalPages;
 
-    //   // this.onSelectPage = this.totalPages[0];
+      // set the columns name
+      // this.displayedColumns = this.columns;
 
-    //   // setting the data source property
-    //   // this.dataSource = this.tableData.Data;
-    // }
+      // this.onSelectPage = this.totalPages[0];
+
+      // setting the data source property
+      // this.dataSource = this.tableData.Data;
+    }
   }
 }
