@@ -24,4 +24,7 @@ after_success: gulp coveralls
 
 cache:
   yarn: true
-  
+
+branches:
+  only:
+    - master
