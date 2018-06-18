@@ -28,3 +28,7 @@ cache:
 branches:
   only:
     - master
+
+cache:
+  directories:
+    - node_modules
