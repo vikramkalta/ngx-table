@@ -1,7 +1,7 @@
 {
   "name": "ngx-awesome-table",
   "description": "Angular library built with ❤ using ngx-library yeoman generator.",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "homepage": "https://github.com/vikramkalta/ngx-table",
   "author": {
     "name": "vikram",
